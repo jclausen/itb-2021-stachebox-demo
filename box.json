@@ -1,0 +1,35 @@
+{
+    "name":"stachebox-test",
+    "version":"1.0.0",
+    "location":"",
+    "author":"Ortus Solutions, Corp",
+    "slug":"stachebox-test",
+    "shortDescription":"A ColdBox application template that leverages ColdBox Elixir for assets and VueJS for UI",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "keywords":[],
+    "homepage":"https://github.com/coldbox-templates/elixir-vuejs",
+    "documentation":"https://github.com/coldbox-templates/elixir-vuejs",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/coldbox-templates/elixir-vuejs"
+    },
+    "bugs":"https://github.com/coldbox-templates/elixir-vuejs/issues",
+    "contributors":[],
+    "ignore":[
+        "readme.md"
+    ],
+    "devDependencies":{
+        "testbox":"^4.2.1+400"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/",
+        "testbox":"testbox/",
+        "stachebox":"modules/stachebox/"
+    },
+    "dependencies":{
+        "coldbox":"^6.0.0",
+        "stachebox":"^1.0.2+73"
+    },
+    "scripts":{}
+}

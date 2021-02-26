@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "devDependencies": {
+        "@babel/plugin-syntax-jsx": "^7.8.3",
+        "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
+        "@vue/babel-plugin-transform-vue-jsx": "^1.1.2",
+        "coldbox-elixir": "^3.0.0",
+        "css-loader": "^3.5.3",
+        "node-sass": "^4.14.1",
+        "postcss-loader": "^3.0.0",
+        "sass-loader": "^8.0.2",
+        "style-loader": "^1.2.1",
+        "vue-loader": "^15.9.2",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "bootstrap": "^4.4.1",
+        "jquery": "^3.5.1",
+        "popper.js": "^1.16.1",
+        "stachebox": "0.0.1",
+        "vue": "^2.6.10"
+    },
+    "scripts": {
+        "dev": "webpack --hide-modules",
+        "watch": "npm run dev -- --watch",
+        "prod": "webpack -p -d"
+    }
+}
