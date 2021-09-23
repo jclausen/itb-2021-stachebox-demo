@@ -20,7 +20,7 @@
         "readme.md"
     ],
     "devDependencies":{
-        "testbox":"^4.2.1+400"
+        "testbox":"^4.4.0-snapshot"
     },
     "installPaths":{
         "coldbox":"coldbox/",
@@ -28,8 +28,8 @@
         "stachebox":"modules/stachebox/"
     },
     "dependencies":{
-        "coldbox":"^6.0.0",
-        "stachebox":"^1.0.2+73"
+        "coldbox":"^6.5.2+37",
+        "stachebox":"^1.0.4+77"
     },
     "scripts":{}
 }

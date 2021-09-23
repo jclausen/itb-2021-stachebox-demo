@@ -12,6 +12,22 @@ component extends="coldbox.system.EventHandler" {
 	 * Produce some restfulf data
 	 */
 	function data( event, rc, prc ) {
+		var errorsToThrow = [
+			function(){
+				var a = b;
+			},
+			function(){
+				throw( type="TotallyNotAuthorizedException", message="You have no permissions here, fool.");
+			},
+			function(){
+				throw( type="Hello.Stachebox", message="This is a fake error" );
+			}
+		];
+
+		var errorToRun = errorsToThrow[ randRange( 1, errorsToThrow.len() ) ];
+
+		errorToRun();
+
 		return [
 			{ "id" : createUUID(), name : "Luis" },
 			{ "id" : createUUID(), name : "JOe" },
@@ -19,6 +35,7 @@ component extends="coldbox.system.EventHandler" {
 			{ "id" : createUUID(), name : "Darth" }
 		];
 	}
+
 
 	/**
 	 * Relocation example

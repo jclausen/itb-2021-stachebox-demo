@@ -6,7 +6,7 @@
         "@vue/babel-plugin-transform-vue-jsx": "^1.1.2",
         "coldbox-elixir": "^3.0.0",
         "css-loader": "^3.5.3",
-        "node-sass": "^4.14.1",
+        "node-sass": "4.13.1",
         "postcss-loader": "^3.0.0",
         "sass-loader": "^8.0.2",
         "style-loader": "^1.2.1",
@@ -17,7 +17,7 @@
         "bootstrap": "^4.4.1",
         "jquery": "^3.5.1",
         "popper.js": "^1.16.1",
-        "stachebox": "0.0.1",
+        "stachebox": "^0.0.1",
         "vue": "^2.6.10"
     },
     "scripts": {

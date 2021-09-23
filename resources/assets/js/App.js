@@ -41,10 +41,31 @@ fetch(
     }
 );
 
-setTimeout(
+var makeErrors = function(){
+	fetch(
+		'/main/data',
+		{
+			method: 'get'
+		}
+	);
+}
+
+setInterval(
 	function(){
 		throw( "Boom goes the javascript" );
 	},
 	5000
+);
+setInterval(
+	function(){
+		throw( "Kapow! Your javascript is buggy" );
+	},
+	7000
+);
+setInterval(
+	function(){
+		makeErrors();
+	},
+	3000
 )
 

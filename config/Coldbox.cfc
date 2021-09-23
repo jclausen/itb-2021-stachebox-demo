@@ -53,7 +53,8 @@
                 "userServiceClass" : "UserService@stachebox"
             },
             "logstash" : {
-                "applicationName" : "WebinarTest"
+                "applicationName" : "StacheboxApp-ITB2021",
+				"enableAppenders" : true
             }
         };
 

@@ -24,6 +24,22 @@ services:
       - BEATS_SYSTEM_PASSWORD=L0g5t4ch3!
     restart: on-failure:5
 
+  app:
+    build: ./build/docker/app
+    ports:
+      - "61685:8080"
+    volumes:
+      - .:/app
+    environment:
+      ENVIRONMENT: development
+      ELASTICSEARCH_HOST: elasticsearch
+      ELASTICSEARCH_USERNAME: elastic
+      ELASTICSEARCH_PASSWORD: "5t4ch380x!"
+      STACHEBOX_ADMIN_EMAIL: stachebox@ortussolutions.com
+      STACHEBOX_ADMIN_PASSWORD: "5t4ch380x!"
+      HEALTHCHECK_URI: http://127.0.0.1:8080/?healthcheck=true
+    restart: on-failure:5
+
   stachebox:
     image: ortussolutions/stachebox:latest
     ports:
